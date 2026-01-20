@@ -17,7 +17,9 @@
     align-items: center;
     background-color: #1a0b2e;
 }
-
+.nav-ham {
+    display: none;
+}
 .nav li {
     list-style: none;
     display: inline;
@@ -145,6 +147,13 @@
     border: 1px solid #00ff88;
     color: #00ff88;
     border-radius: 9999px;
+    display: flex;
+    gap: 8px;
+}
+
+#btn2 img {
+    height: 20px;
+    width: 20px;
 }
 
 /* about */
@@ -330,7 +339,8 @@
 
 .episode-thumb {
     position: relative;
-    height: 200px;
+    height: 214px;
+    width: 380px;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -399,6 +409,7 @@
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 }
 
 .host-frame {
@@ -449,7 +460,6 @@
     opacity: 0.8;
     line-height: 1.6;
     margin-bottom: 16px;
-    
 }
 
 .host-social {
@@ -486,7 +496,7 @@
     background-image: url(./assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #1A0B2E;
+    background-color: #1a0b2e;
     padding-top: 80px;
     padding-bottom: 80px;
     display: flex;
@@ -537,7 +547,6 @@
     text-decoration: none;
 }
 
-
 .footer-links img {
     width: 20px;
     height: 20px;
@@ -551,4 +560,144 @@
     text-align: center;
     padding-top: 12px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-options,
+    .nav-sub {
+        display: none;
+    }
+    .nav-ham {
+        display: block;
+    }
+    .nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .hero {
+        /* border: 1px solid red; */
+        /* height: 466px; */
+        /* marrgin-top: 400px; */
+        padding: 40px 20px;
+        background-size: contain;
+        background-position: 0px 40px;
+        background-color: #1a0b2e;
+    }
+    .hero-frame {
+        /* margin-top: 40px; */
+    }
+    .hero-img {
+        height: 200px;
+        width: 200px;
+        /* margin-top: 40px; */
+    }
+    .hero-img img {
+        height: 80px;
+        /* width: 80px; */
+    }
+    .hero-btn {
+        margin-bottom: 40px;
+    }
+    .about-container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
+    .about {
+        padding: 40px 20px;
+    }
+    .hero-text h2 {
+        font-size: 2.5rem;
+        padding-bottom: 8px;
+    }
+    .about-subtitle {
+        margin-bottom: 40px;
+    }
+    .about-container hr {
+        margin-bottom: 40px;
+    }
+    .stat-card {
+        /* gap: 40px; */
+        width: 180px;
+        flex-wrap: wrap;
+    }
+    .about-stats {
+        gap: 40px;
+    }
+    .why h2 {
+        padding-top: 40px;
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    .why {
+        padding-bottom: 40px;
+    }
+    .grid {
+        gap: 16px;
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .grid .box1 {
+        grid-row: span 1;
+    }
+
+    .grid .box2,
+    .box3,
+    .box4 {
+        grid-column: span 1;
+    }
+    .episode-frame h2 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .episodes {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .episode-grid {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+    .host-frame h2 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .host {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .host-content {
+        border-radius: 20px;
+        padding: 24px;
+        gap: 40px;
+        margin: 0 20px;
+        flex-direction: column;
+    }
+    .host-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .footer {
+        background-image: url(./assets/footer-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #1a0b2e;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        height: 412px;
+        align-items: center;
+         background-size: contain;
+        background-position: 0px 100px;
+        background-color: #1a0b2e;
+    }
+
 }
