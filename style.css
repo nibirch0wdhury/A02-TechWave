@@ -352,6 +352,30 @@
     object-fit: cover;
 }
 
+.new-badge {
+    position: absolute;
+    top: 270px;
+    right: 800px;
+    background: #00ff88;
+    color: #1a0b2e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .play-btn {
     position: absolute;
     top: 50%;
@@ -371,6 +395,7 @@
     justify-content: center;
     color: white;
     font-size: 1.2rem;
+    /* display: none; */
 }
 
 .episode-card h3 {
@@ -657,8 +682,8 @@
         display: flex;
         gap: 40px;
         justify-content: center;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
         flex-direction: column;
     }
     .host-frame h2 {
@@ -687,17 +712,46 @@
     .footer {
         background-image: url(./assets/footer-bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #1a0b2e;
+        background-size: contain;
+        /* background-color: rgba(83, 60, 114, 1); */
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
         display: flex;
         justify-content: center;
-        height: 412px;
-        align-items: center;
-         background-size: contain;
-        background-position: 0px 100px;
+        width: 100vw;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        /* align-items: center; */
+        /* background-size: contain; */
+        background-position: 0px 50px;
+        /* border: 1px solid red; */
         background-color: #1a0b2e;
     }
-
+    .footer-logo {
+        margin-top: 0px;
+    }
+    .new-badge {
+        top: 130px;
+        right: 150px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .footer-links a {
+        display: flex;
+        align-items: center;
+        /* gap: 8px; */
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+        width: 150px;
+        margin: 0 auto;
+    }
 }
